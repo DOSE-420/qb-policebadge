@@ -1,0 +1,75 @@
+@font-face {
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body, html {
+  width: 70%;
+  height: 70%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #9e9e9e00;
+  font-size: 12px;
+}
+
+#id-card {
+  position: relative;
+  display: none;
+  margin: 280px 1400px 0 0;
+  left: 10vh;
+  width: 485px;
+  height: 383px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/lspd.png");
+}
+
+img {
+  position: absolute;
+  left:2px;
+  top:5px;
+}
+
+#name {
+  font-weight: bolder;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none; 
+  color: #000000;
+}
+
+#inline {
+  position: absolute;
+  top: 279px;
+  left: 60px;
+}
+
+#dob {
+  position: absolute;
+  left: 0;
+  width: 100px;
+}
+
+#sex {
+  position: absolute;
+  left: 90px;
+}
+
+#signature {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #00000000;
+  font-size: 19px;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  font-family: "Courier New", Courier, monospace;
+}
