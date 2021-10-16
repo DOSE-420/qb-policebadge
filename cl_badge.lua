@@ -8,7 +8,6 @@ local plate_net = nil
 
 local open = false
 
--- Öffnen einer Ausweis-ID
 RegisterNetEvent('badge:open')
 AddEventHandler('badge:open', function( data, type )
 	open = true
@@ -26,7 +25,6 @@ AddEventHandler('badge:open', function( data, type )
 	open = false
 end)
 
--- Schaltflächenereignisse mit geöffnetem Abzeichen
 Citizen.CreateThread(function()
 	while true do
 		Wait(0)
