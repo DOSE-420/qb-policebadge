@@ -1,1 +1,1 @@
-# qb-policebadge
+# Police Badge for QBCore
