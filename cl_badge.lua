@@ -107,6 +107,9 @@ AddEventHandler('badge:shot', function(playerID)
 	local posx, posy = 0, 0.26
 	local width, height = 0.07, 0.14
 	local x, y = GetActiveScreenResolution()
+		if x == 2560 and y == 1440 then
+			posx, posy = 0.11, 0.27
+			width, height = 0.06, 0.1
 		if x == 1920 and y == 1080 then
 			posx, posy = 0.12, 0.35
 	 		width, height = 0.07, 0.14
