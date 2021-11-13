@@ -160,7 +160,7 @@ AddEventHandler('badge:shot', function(playerID)
 			width, height = 0.0905, 0.251
 		end
 
-	local playerPed = PlayerPedId(GetPlayerFromServerId( playerID ))
+	local playerPed = GetPlayerPed(GetPlayerFromServerId( playerID ))
 	local handle = RegisterPedheadshot(playerPed)
 
 	if not IsPedheadshotValid(handle) then
