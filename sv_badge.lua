@@ -14,5 +14,15 @@ AddEventHandler('badge:open', function(ID, targetID, type)
 end)
 
 QBCore.Functions.CreateUseableItem('specialbadge', function(source, item)
-    TriggerClientEvent('badge:openPD', source, true)
+	local Player = QBCore.Functions.GetPlayer(source)
+	if Player.PlayerData.job.name == "police" then
+		if Player.PlayerData.job.onduty then
+			TriggerClientEvent('badge:openPD', source, true)
+		else
+			TriggerClientEvent('QBCore:Notify', source, "You must be on Duty!", "error")
+		end
+	else
+		TriggerClientEvent('QBCore:Notify', source, "For Police Officers Only", "error")
+	end
+
 end)
